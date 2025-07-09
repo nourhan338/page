@@ -1,0 +1,36 @@
+h1{
+background-image: linearGradient(to right, #3b82f6, #1e293b); /* دمج لونين */
+background-image: url('https://example.com/image.jpg'); /* إضافة صورة */
+background-repeat: repeat; /* تكرار الخلفية */
+background-repeat: no-repeat; /* عدم تكرار الخلفية */
+background-repeat: repeat-x; /* تكرار أفقي فقط */
+background-repeat: repeat-y; /* تكرار عمودي فقط */
+}
+/*------------------------------------------------------------------------------------------*/
+a:hover {
+color: #3b82f6; /* تغيير لون النص عند التمرير */
+}
+
+a:active {
+color: #1e293b; /* تغيير لون النص عند الضغط */
+}
+/*-------------------------------------------------------------------------------------------*/
+a{
+    overflow: hidden; /* إخفاء النص الزائد */
+    overflow: auto; /* إضافة شريط تمرير إذا كان النص زائد */
+    overflow: scroll; /* إضافة شريط تمرير دائم */
+}
+/*-------------------------------------------------------------------------------------------*/
+ a {
+    vertical-align: middle; /* محاذاة عمودية للنص */
+    vertical-align: top; /* محاذاة عمودية للنص إلى الأعلى */
+    vertical-align: bottom; /* محاذاة عمودية للنص إلى الأسفل */
+}
+
+/*-------------------------------------------------------------------------------------------*/
+a {
+    text-decoration: none; /* إزالة التسطير */
+    text-decoration: underline; /* إضافة تسطير */
+    text-decoration: line-through; /* إضافة خط فوق النص */
+    text-decoration: overline; /* إضافة خط فوق النص */
+}
