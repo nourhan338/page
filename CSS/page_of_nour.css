@@ -4,7 +4,7 @@ body {
     color: #f7f4f4;
     margin: 0;
     padding: 0;
-    clear: both;
+    justify-content: center;
 }
 
 
@@ -12,7 +12,7 @@ header {
     background-color: #27364f;
     padding: 25px;
     border-bottom:solid 3px #7895b8;
-    clear: both;
+    
 }
 
 header p {
@@ -24,7 +24,7 @@ header p {
 
 section {
     padding: 30px 20px 20px 20px;
-    max-width: 1100px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -53,18 +53,15 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     font-size: x-large;
-    clear: both;
-    display: inline-block;
+    width: 300px;
 }
 
 
 .about h2 {
     font-size: 2.5em;
     color: #22ad59;
-    margin: 0px;
-    text-align: right;
+    margin: 0px;;
     width: 100px;
-
 }
 
 .about h1 {
@@ -72,11 +69,11 @@ section {
     color: #d91f41;
     margin: 0px;
     padding-right: 30px;
-    width: 360px;
+    
 }
 
 .projects {
-    padding: 20px 100px 20px 100px;
+    padding: 20px 40px 20px 40px;
     margin-bottom: 20px;
     background-color: #112442;
 }
