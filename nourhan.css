@@ -1,0 +1,480 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    background: #fff7f0;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: -5px;
+    z-index: 100;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4b6bfcb;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin:5px 10px;
+    padding:0 5px;
+}
+
+.nav-links a {
+    font-weight: 400;
+    font-size: 1.05em;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #585858;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ffb6c1, #ffe4b5, #87cefa);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.hero-img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ffcc00;
+}
+
+.profile_section {
+    margin: 50px;
+    padding: 30px;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    background-color: #d91f41;
+    border-radius: 50%;
+    box-shadow: #5a5a5a 0px 0px 20px 5px;
+    margin: 50px 20px 50px 20px;
+    padding-top: 20px;
+    float: left;
+    position: relative;
+    right: -10%;
+    transition-duration: 0.3s;
+}
+
+.profile img {
+    border-radius: 45%;
+    object-fit: scale-down;
+    transform: translatey(-32.5%);
+    position: relative;
+    right: -2%;
+    width: 100%;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    margin: 20px auto 20px auto;
+    font-size: x-large;
+    display: inline-block;
+    position: relative;
+    left: -15%;
+}
+
+
+.name h2 {
+    font-size: 2.5em;
+    color: #2ac568;
+    margin: 0px;
+    width: 100px;
+}
+
+.name h1 {
+    font-size: 4em;
+    color: #ff6e89;
+    margin: 0px;
+    margin-right: 50px;
+}
+
+.profile_section p {
+    color: #474747;
+    margin: 50px;
+    font-size: 1.4em;
+    text-align: right;
+    line-height: 1.8em;
+    padding: 20px;
+    margin: auto 200px;
+}
+
+/* About */
+.about {
+    padding: 40px 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+.about-img {
+    width: 120px;
+    margin: 15px 0;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+    color: #ff69b4;
+}
+
+/* Services */
+.services {
+    padding: 80px 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background: #fff0f5;
+    text-align: center;
+}
+
+.services h1 {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    color: #ff69b4;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.projects {
+    padding: 50px 40px 40px 40px;
+    margin: 0px auto 50px auto;
+    background-color: #fff0f5;
+    
+}
+
+.projects h3 {
+    font-size: 1.6em;
+    color: #ff69b4;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+
+.lesson {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 15px auto;
+    padding: 10px;
+    align-content: center;
+}
+
+.lesson p {
+    font-size: 1.3em;
+    color: #484848;
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+}
+
+.lesson a {
+    font-size: 1.2em;
+    color: #333;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.lesson a:hover {
+    color: #d0c831;
+}
+
+/* Footer */
+footer {
+    background: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.contact {
+    background-color: #fff7f0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #474747;
+    clear: both;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ff69b4;
+}
+
+.loc,
+.phone {
+    border: #636363 solid 2px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: auto 10px 20px 10px;
+    padding: 20px 50px 0px 50px;
+    transition-duration: 0.3s;
+}
+
+.loc:hover,
+.phone:hover {
+    transform: scale(1.05);
+}
+
+.contact p {
+    margin-top: -5px;
+    color: #6c6c6c;
+    padding-bottom: 10px;
+}
+
+.phone i,
+.loc i {
+    color: #4373cc;
+    font-size: 1.2em;
+
+}
+
+.contact h2 {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.contact .accounts {
+    padding: 20px;
+}
+
+.contact a {
+    padding: 7px;
+    font-size: 1.1em;
+    border: #4c4c4c solid 1px;
+    border-radius: 50%;
+    margin: 20px 10px 10px 5px;
+    transition-duration: 0.3s;
+}
+
+.accounts i {
+    color: #4a4a4a;
+}
+
+.contact a:hover {
+    background-color: #f18da9;
+}
+
+.contact nav {
+    display: inline-block;
+    padding: 15px;
+}
+
+.contact nav a {
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: #ff83c1;
+    transition-duration: 0.3s;
+
+}
+
+.contact nav:hover a {
+    background-color: #fc9acb;
+    font-size: 1.35em;
+}
+
+/* Responsive */
+
+@media (max-width: 1600px) and (min-width: 1100px) {
+    .profile {
+        right: -5%;
+    }
+    .name {
+        left: -10%;
+    }
+
+    .profile_section p {
+        margin: auto 100px;
+    }
+}
+/* ------------------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+
+        .profile {
+            border-radius: 50%;
+            box-shadow: #5a5a5a 0px 0px 50px 5px;
+            margin: 50px auto 50px auto;
+            padding-top: 20px;
+            float: none;
+            align-content: center;
+            position: none;
+            right: 0%;
+        }
+
+        .profile_section p {
+            margin: auto 50px;
+        }
+    
+}
+/* ------------------------------------------------------------------------ */
+
+@media (max-width: 600px) {
+    .profile_section {
+        padding: 20px 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #f4b6bfcb;
+        position: absolute;
+        top: 67.7px;
+        right: 0;
+        width: 40%;
+        padding: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .navbar .logo {
+        margin: 0;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+}
+/* ------------------------------------------------------------------------ */
+
+@media (max-width: 550px) {
+    .name {
+        left: 0%;
+        margin: 20px 30px 20px 30px;
+    }
+
+    .name h1 {
+        font-size: 3em;
+        margin-right: 0px;
+    }
+
+    .profile_section p {
+        margin: auto;
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 450px) {
+    .profile {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile img {
+        transform: translateY(-33.5%);
+    }
+
+    .profile_section p {
+        margin: auto;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+}

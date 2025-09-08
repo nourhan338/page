@@ -6,72 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nourhan - نورهان</title>
     <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="CSS/page_of_nour.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="../Projects CSS/nourhan.css">
+    <link rel="stylesheet" href="CSS/all.min.css"> <!-- font awesome -->
 </head>
 
 <body>
-    <header>
-        <p> معلمة اطفال | وعي تربوي</p>
+
+    <!-- 🔹 Navbar -->
+    <header dir="ltr">
+        <nav class="navbar">
+            <div class="logo">🌸 نورهان</div>
+            <ul class="nav-links" id="navLinks" dir="rtl">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من أنا</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#projects">الدروس و الأنشطه</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
     </header>
 
-    <section>
+    <section class="hero" id="home">
+        <img src="../Projects HTML/images/png-clipart-women-open-computer-icons-teacher-teacher-child-construction-tools-thumbnail1.png" alt="أطفال" class="hero-img">
+        <h1>أهلاً بكم في منصتي التعليميه 🌈</h1>
+        <p>معلمة اطفال | وعي تربوي</p>
+        <a href="#about" class="btn">تعرف عليّ أكثر</a>
+    </section>
 
-        <div class="profile">
+
+    <!-- 🔹 Profile Section -->
+    <section class="profile_section">
+        <div class="profile" id="profile">
             <img src="images/BodyEditor_20250709_042108377.png" alt="Profile" class="teacher-image">
         </div>
-        
-        <div class="about">
+            
+        <div class="name">
             <h2>م/</h2>
             <h1>نورهان</h1>
-            <h5>التربيه احلي و اخف دايما مع نورهان☺</h5>
         </div>
-
+        <p>التربيه احلي و اخف دايما مع نورهان☺</p>
+        
     </section>
 
-    <section class="projects" dir="ltr">
-        <h3><border>الدروس و الأنشطه</border></h3>
+    <hr>
 
-        <div class="lesson1">
-            <p>Lesson 1 : عمرك فكرتي طفلك محتاج ايه عشان يتكلم؟</p>
-            <a href="https://www.facebook.com/share/r/1AdxSKBX9Y/" dir="rtl" target="_blank"> <b>Watch video</b> </a> 
-        </div>
-        
-        <div class="lesson2">
-            <p>Lesson 2 : جمل متقوليهومش لطفلك ابدا و3 بدائل ايجابيه ليهم</p>
-            <a href="https://www.facebook.com/share/r/1CTKBHGmBh/" dir="rtl" target="_blank"> <b>Watch video</b> </a>
-        </div>
-        
-        <div class="lesson3">
-            <p>Lesson 3 : لو بتزعقي كتير الفيديو داه ليكي مقدرش مقولكوش علي اللي حصل</p>
-            <a href="https://www.facebook.com/share/r/1BiMF9DfMk/" dir="rtl" target="_blank"> <b>Watch video</b> </a> 
-        </div>
-
-            
-
+    <!-- 🔹 About Section -->
+    <section class="about" id="about">
+        <img src="../Projects HTML/images/3076129.png" alt="معلمة" class="about-img">
+        <h2>من أنا؟</h2>
+        <p>
+            أنا معلمة أطفال بخبرة أكثر من عام في التعليم المبكر.
+            هدفي هو تنمية مهارات الأطفال من خلال اللعب، الأنشطة الإبداعية، والقصص الممتعة. 💖
+        </p>
     </section>
+
+    <!-- 🔹 Services Section -->
+    <section class="services" id="services">
+        <h1>الخدمات التعليمية</h1>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="../Projects HTML/images/1864509.png" alt="قراءة">
+                <h3>📖 تعليم القراءة</h3>
+                <p>دروس ممتعة لتعليم الحروف والكلمات بطريقة مبسطة.</p>
+            </div>
+            <div class="service-card">
+                <img src="../Projects HTML/images/1670614.png" alt="أنشطة فنية">
+                <h3>🎨 أنشطة فنية</h3>
+                <p>رسم وتلوين وحرف يدوية لتنمية الإبداع عند الأطفال.</p>
+            </div>
+            <div class="service-card">
+                <img src="../Projects HTML/images/4149679.png" alt="أناشيد">
+                <h3>🎵 أناشيد وألعاب</h3>
+                <p>أنشطة موسيقية وألعاب تعليمية تزيد من تفاعل الأطفال.</p>
+            </div>
+        </div>
+    </section>
+
+        
+        
+    <section class="projects" id="projects" dir="ltr">
+            <h3>الدروس و الأنشطه</h3>
+        
+            <div class="lesson">
+                <p>Lesson 1 | عمرك فكرتي طفلك محتاج ايه عشان يتكلم؟</p>
+                <a href="https://www.facebook.com/share/r/1AdxSKBX9Y/" dir="rtl" target="_blank"> <b>Watch video</b> </a>
+            </div>
+        
+            <div class="lesson">
+                <p>Lesson 2 | جمل متقوليهومش لطفلك ابدا و3 بدائل ايجابيه ليهم</p>
+                <a href="https://www.facebook.com/share/r/1CTKBHGmBh/" dir="rtl" target="_blank"> <b>Watch video</b> </a>
+            </div>
+        
+            <div class="lesson">
+                <p>Lesson 3 | لو بتزعقي كتير الفيديو داه ليكي مقدرش مقولكوش علي اللي حصل</p>
+                <a href="https://www.facebook.com/share/r/1BiMF9DfMk/" dir="rtl" target="_blank"> <b>Watch video</b> </a>
+            </div>
+        
+    </section>
+
+
+    <!-- 🔹 Contact Section -->
+    <section id="contact" class="contact" dir="ltr">
+        <h1>للتواصل​</h1>
     
-    <footer dir="ltr">
-        <h2 dir="ltr">To contact ​👇​</h2>
-        <p dir="ltr">0 122 027 3813</p>
-        <border style="border: 2px solid #3b82f6; padding: 10px; border-radius: 10px; background-color: #1e293b;">
-            <a href="https://www.facebook.com/share/16zjMELRJs/" target="_blank"><img src="images/2021_Facebook_icon.svg.webp"
-                    width="28px" draggable="false"></a>
-            <a href="https://www.instagram.com/nourmahmoud5831?igsh=MTRhYWhrdjNrOWczMQ==" target="_blank"><img
-                    src="images/Instagram_icon.png.webp" width="27px" draggable="false"></a>
-        </border>
-        <br>
-        <p>&copy; Nourhan | All rights reserved 2025 </p>
-     </footer>
+        <div class="phone">
+            <i class="fa-solid fa-phone-flip"></i>
+            <h2>Phone</h2>
+            <p>0 122 027 3813</p>
+        </div>
     
+        <div class="loc">
+            <i class="fa-solid fa-location-dot"></i>
+            <h2>Location</h2>
+            <p>اسكندريه, العجمي</p>
+        </div>
+    
+        <div class="accounts">
+            <a href="https://www.facebook.com/share/16zjMELRJs/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nourmahmoud5831?igsh=MTRhYWhrdjNrOWczMQ==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/+201220273813" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+                <nav calss="to_home">
+                    <a   href="#home">الرئيسية</a>
+                </nav>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer>
+        <p class="right">&copy; نورهان | كل الحقوق محفوظه 2025</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+                document.getElementById("navLinks").classList.toggle("show");
+            }
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
